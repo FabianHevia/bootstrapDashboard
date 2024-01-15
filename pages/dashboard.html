@@ -507,7 +507,7 @@
             </div>
             <div class="card-body p-3">
               <div class="chart">
-                <canvas id="chart-line" class="chart-canvas" height="380"></canvas>
+                <canvas id="chart-line" class="chart-canvas" height="325"></canvas>
               </div>
             </div>
           </div>
@@ -1017,10 +1017,13 @@
           r: {
             suggestedMin: 0,
             suggestedMax: 60,
-          },
+            ticks: {
+          display: false,
         },
       },
-    });
+    },
+  },
+  });
 
 
     var ctx2 = document.getElementById("chart-line").getContext("2d");
