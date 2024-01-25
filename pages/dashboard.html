@@ -272,7 +272,7 @@
 
       <!-- Inicia el row 1 -->
 
-      <div class="row">
+      <div class="row col-11 mx-auto">
 
         <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
           <div class="card">
@@ -479,7 +479,7 @@
       <!-- Finaliza el row 1 -->
 
       <!-- Inicia el row 2 -->
-      <div class="row mt-2">
+      <div class="row mt-2 larger-shadow">
         <div class="col-11 mx-auto">
           <div class="card bg-gradient-light border-radius-lg mt-2">
             <div class="card-header">
@@ -495,7 +495,7 @@
 
       <!-- Inicia el row 3 -->
 
-      <div class="row mt-4 col-11 mx-auto">
+      <div class="row mt-4 col-11 mx-auto larger-shadow">
         <div class="col-lg-8">
           <div class="card z-index-2">
             <div class="card-header pb-0">
@@ -1193,6 +1193,15 @@
             },
           },
         },
+        onClick: function(event, elements) {
+          if (elements.length > 0) {
+            // Obtener el índice de la barra clicada
+            var index = elements[0].index;
+
+            // Cambiar la ubicación de la página con parámetros de consulta
+            window.location.href = "profile.html?index=" + index;
+          }
+        }
       },
     });
   </script>
